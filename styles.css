@@ -1,0 +1,170 @@
+body {
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #000;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, p {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: #333 url('./header_1.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 360px;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: #000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+section {
+    margin: 20px 0;
+}
+
+code {
+    background-color: #000;
+    color: #fff;
+    padding: 0.2rem;
+}
+
+.skill, .project {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.progress {
+    height: 30px;
+}
+
+.skill-1 {
+    background: rgb(10, 112, 59);
+}
+
+.skill-2 {
+    background: rgb(74, 27, 151);
+}
+
+.skill-3 {
+    background: rgb(243, 255, 122);
+}
+
+.skill-4 {
+    background: rgb(212, 19, 38);
+}
+
+.skill-5 {
+    background: rgb(28, 56, 195);
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-left: 4px solid #333;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: #000;
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 599px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
